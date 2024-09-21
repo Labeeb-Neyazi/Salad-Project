@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .section-1{
+      background-color: aqua;
+      text-align: center;
+      h1{
+height: 50px;
+margin-top: 9%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style: normal;
+font-variant: initial;
+ }
+h2{
+  margin-top: 2%;
+  font-family: cursive;
+
+}
+span{
+  margin-top: 5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    }
+    button:hover{
+      background-color: #FFD43B;
+      border: #FFD43B;
+      color: black;
+ 
+  
+    }
+    .section-2{
+      h1{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 100;
+      }
+    }
+    .btn1{
+      margin-top: 200px;
+    }
+    
+    
+
+    
+    .tt:hover{
+      color:rgb(11, 2, 2);
+      background-color: rgb(186, 218, 207);
+      
+
+    }
+    .tt{
+      color: #020f01;
+    font-family: 'Times New Roman', Times, serif;
+      background-color: #45c35c;
+   border-bottom-right-radius: 70px;
+      border-top-left-radius: 90PX;
+    
+      
+      
+    }
+.eight{
+  background-color: #FFD43B;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+button:hover{
+    color: #e6820f;
+    border-radius: 8px;
+    background-color: bisque;
+  }
+.sub{
+justify-content: center;
+text-align: center;
+align-items: baseline;
+}
+.uni{
+  animation: mymove 8s infinite;
+}
+@keyframes mymove{
+  50%{transform: rotate(360deg);}
+  
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #bcc6ab;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+/* From Uiverse.io by Shoh2008 */ 
+.checkbox-wrapper-5 .check {
+  --size: 40px;
+  position: relative;
+  background: linear-gradient(90deg, #f19af3, #f099b5);
+  line-height: 0;
+  perspective: 400px;
+  font-size: var(--size);
+}
+
+.checkbox-wrapper-5 .check input[type="checkbox"],
+  .checkbox-wrapper-5 .check label,
+  .checkbox-wrapper-5 .check label::before,
+  .checkbox-wrapper-5 .check label::after,
+  .checkbox-wrapper-5 .check {
+  appearance: none;
+  display: inline-block;
+  border-radius: var(--size);
+  border: 0;
+  transition: .35s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-5 .check label {
+  width: calc(2.2 * var(--size));
+  height: var(--size);
+  background: #d7d7d7;
+  overflow: hidden;
+}
+
+.checkbox-wrapper-5 .check input[type="checkbox"] {
+  position: absolute;
+  z-index: 1;
+  width: calc(.8 * var(--size));
+  height: calc(.8 * var(--size));
+  top: calc(.1 * var(--size));
+  left: calc(.1 * var(--size));
+  background: linear-gradient(45deg, #dedede, #ffffff);
+  box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+  outline: none;
+  margin: 0;
+}
+
+.checkbox-wrapper-5 .check input[type="checkbox"]:checked {
+  left: calc(1.3 * var(--size));
+}
+
+.checkbox-wrapper-5 .check input[type="checkbox"]:checked + label {
+  background: transparent;
+}
+
+.checkbox-wrapper-5 .check label::before,
+  .checkbox-wrapper-5 .check label::after {
+  content: "· ·";
+  position: absolute;
+  overflow: hidden;
+  left: calc(.15 * var(--size));
+  top: calc(.5 * var(--size));
+  height: var(--size);
+  letter-spacing: calc(-0.04 * var(--size));
+  color: #9b9b9b;
+  font-family: "Times New Roman", serif;
+  z-index: 2;
+  font-size: calc(.6 * var(--size));
+  border-radius: 0;
+  transform-origin: 0 0 calc(-0.5 * var(--size));
+  backface-visibility: hidden;
+}
+
+.checkbox-wrapper-5 .check label::after {
+  content: "●";
+  top: calc(.65 * var(--size));
+  left: calc(.2 * var(--size));
+  height: calc(.1 * var(--size));
+  width: calc(.35 * var(--size));
+  font-size: calc(.2 * var(--size));
+  transform-origin: 0 0 calc(-0.4 * var(--size));
+}
+
+.checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::before,
+  .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
+  left: calc(1.55 * var(--size));
+  top: calc(.4 * var(--size));
+  line-height: calc(.1 * var(--size));
+  transform: rotateY(360deg);
+}
+
+.checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
+  height: calc(.16 * var(--size));
+  top: calc(.55 * var(--size));
+  left: calc(1.6 * var(--size));
+  font-size: calc(.6 * var(--size));
+  line-height: 0;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
+    <div class="container">
+      <a class="navbar-brand" href="#">SA<i class="fa-solid fa-l fa-2xl" style="color: #FFD43B;"></i>AD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Instagram</a></li>
+              <li><a class="dropdown-item" href="#" ></a>Whatsapp</li>
+              <li><hr class="dropdown-divider"></li>
+           
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blogs</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+ 
+        </form>
+         
+ 
+        <div class="checkbox-wrapper-5">
+          <div class="check">
+            <input checked="" id="check-5" type="checkbox">
+            <label for="check-5"></label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+ 
+
+  <div class="section-1">
+    <div class="box">
+   <div class="row">
+    <div class="col-lg-6">
+      
+      <h1>A FINE DINING RESTAURANT</h1>
+      <h2>Delicious Food</h2>
+      <span>Healthy foods to eat everyday,SO Delicious,Tempting Treats,Heavenly Flavours <br>`The food is served at the table to have a comfortable visit for your meals`</span><br>
+      <i class="fa-solid fa-utensils fa-rotate-180 fa-xl fs-2 mt-4" style="color: #e6820f;"></i>
+    
+      <button class="cta mt-4">
+        <span>ORDER NOW</span>
+        <svg width="15px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+      
+    </div>
+    <div class="col-lg-6 uni">
+      <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/banner1.png" class="img-fluid position-relative" alt=" ">
+    </div>
+   </div>
+      
+    </div>
+  </div>
+  <div class="section-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5srFxJIO25gREPdYdqXMENUagWzFYQ2WUg&s" alt="" class="w-100 mt-4 px-4 py-4" >
+            </div>
+            <div class="col-lg-6">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRifTsxRRa7GihbchVfPZavE6KYc66CtoHg&s" alt="" class="w-100 mt-4 px-4 py-5">
+
+            </div>
+
+          </div>
+
+    
+        </div>
+<div class="col-lg-6">
+  <div class="my mt-5 py-5 px-4">
+  <h3>Since 2023</h3>
+  <h1>We Have 1+ Years of Experience</h1>
+  <span>Eating at a restaurant is a wonderful and relaxing experience when you know all the right phrases. This guide covers everything you need.</span>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+<div class="section-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center mt-4 px-4 py-5">Our <b>Popular</b> Dishes</h2>
+      </div>
+      
+      <div class="col-lg-4">
+        <div class="card" style="background-color: #FFD43B;">
+        <img src="https://media.istockphoto.com/id/2147864552/photo/view-of-a-meat-based-meal-at-restaurant.webp?b=1&s=612x612&w=0&k=20&c=ZpTB7TzmYk59Ewc1sdV3Z_AbJfJfaPwUL6dkaoa2dfg=" alt="" class="w-100">
+         <h5 class="mt-3 py-3 px-3">WEST YORKSHIRE</h5>
+         <span class="mt-3 px-3 py-3">Yorshire pudding is a traditional British dish that is a staple in a classic Sunday roast. It`s a savory dish made from a batter of eggs</span>
+        </div>
+      </div>
+ 
+      <div class="col-lg-4">
+        <div class="card" style="background-color: #b1e078;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxH5Sc7zLndMI--9NYiOTQq61ENLIQ12QUOAMh3cruBPoqjfVpMePtu9lotd5UVCObvz8&usqp=CAU" alt="" class="w-100">
+        <h5 class="mt-3 py-3 px-4">GOURMET FINE</h5>
+        <span class="mt-3 px-3 py-4">Gourmet bakers and sweets is the top food retail chain of Lahore.Gourmet is the number one brand in the market of bakers and sweets</span>
+      </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="background-color: rgb(226, 121, 198);">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtVikZHqV1AkXHLxLjeo-hykHe9KAfitUIDvuqywPxZdVYQNVhOy3YBaaTkX8pAOyLspo&usqp=CAU" alt="" class="w-100">
+        <h5 class="mt-3 py-3 px-4">VENDERBIKEN</h5>
+        <span class="mt-3 px-3 py-4">Venderbiken has some fantastic dining option ranging from classic burgers and chicken tendies to vietnamies and protein health bowls.</span>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="section-4 mt-4 pt-5" style="background-color: #b1e078;">
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="" style="padding-top: 50px;">Our Restaurant Menu</h1>
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-lg-6 mt-5">
+        
+        <span class="fs-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+        <button class="btn btn- mt-3 fs-5 px-4 mx-4" style="background-color: #e6820f; color: antiquewhite; border-radius: 20px;">Whats on the menu</button>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <span class="fs-5">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/ab1.jpg" alt="" class="img-fluid " style="border-top-left-radius: 90px;margin-left: 60px; justify-content: center; align-items: center;border-top-right-radius: 20px;height: 250px;border-bottom-left-radius: 20px;border-bottom-right-radius: 90px;">
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="section-5">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4 mt-4">
+        <div class="card tt">
+        
+        <i class="fa-solid fa-apple-whole fa-xl ff text-center mt-3 fs-2" style="color:orangered; "></i>
+        <h3 class="text-center mt-3">Healthy Foods</h3>
+        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores qui iste quae? Suscipit unde, dicta, qui beatae minus enim odit culpa necessitatibus accusamus esse, omnis explicabo adipisci alias eligendi labore?</p>
+
+      </div>
+      </div>
+      <div class="col-lg-4 mt-4 ">
+        <div class="card tt">
+        <i class="fa-solid fa-spoon fa-xl ff text-center mt-4 fs-2" style="color:orangered;"></i>
+        <h3 class="text-center mt-3">Fresh Salads</h3>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat aliquid quo iste atque similique ratione assumenda, praesentium mollitia aspernatur? Reprehenderit molestiae sequi assumenda rerum quisquam exercitationem nulla laborum nisi corrupti!</p>
+
+      </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="card tt">
+        <i class="fa-solid fa-carrot fa-xl ff text-center mt-4 fs-2" style="color:orangered;"></i>
+        <h3 class="text-center mt-3">Natural Fiber</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste laudantium iure similique sit doloribus repellendus, quos beatae fugiat et quasi animi corrupti ea, necessitatibus minima totam, provident aperiam quibusdam voluptate.</p>
+
+      </div>
+      </div>
+     </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="section-6">
+  <div class="container ">
+    <div class="row mt-5">
+      <div class="col-lg-4 mt-4 ">
+        <div class="card tt">
+          <i class="fas fa-lemon text-center mt-4 fs-2" style="color:orangered;"></i>
+        <h3 class="text-center mt-3 ">Nutrition Foods</h3>
+        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores qui iste quae? Suscipit unde, dicta, qui beatae minus enim odit culpa necessitatibus accusamus esse, omnis explicabo adipisci alias eligendi labore?</p>
+
+      </div>
+      </div>
+      <div class="col-lg-4 mt-4 ">
+        <div class="card tt">
+          <i class="fas fa-heartbeat mt-4 fs-2 text-center" style="color:orangered;"></i>
+        <h3 class="text-center mt-3">Protect Your Heart</h3>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat aliquid quo iste atque similique ratione assumenda, praesentium mollitia aspernatur? Reprehenderit molestiae sequi assumenda rerum quisquam exercitationem nulla laborum nisi corrupti!</p>
+
+      </div>
+      </div>
+      <div class="col-lg-4 mt-4">
+        <div class="card tt">
+          <i class="fas fa-weight mt-4 fs-2 text-center" style="color:orangered;"></i>
+        <h3 class="text-center mt-3">Weight Control</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste laudantium iure similique sit doloribus repellendus, quos beatae fugiat et quasi animi corrupti ea, necessitatibus minima totam, provident aperiam quibusdam voluptate.</p>
+
+      </div>
+      </div>
+     </div>
+  </div>
+</div>
+<div class="section-7">
+  <div class="container mt-4 pt-5">
+    <div class="row">
+      <div class="col-lg-6 mt-4 px-4 py-4">
+        <h1 class="mt-4">Meet Our Best <span class="text-info">Chef`s</span> </h1>
+        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor magni dicta hic vel voluptatum dolore vero necessitatibus enim quidem nesciunt iste, adipisci aut velit esse nemo delectus officiis mollitia doloribus!</p>
+        <button style="border-radius: 10px ;" class="mt-4 fs-4 btn btn-outline-success">See Our Chef`s</button>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/img2.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<section class="w3l-forms-9 text-center pt-5 pb-md-4" id="newsletter" style="background-color: rgb(127, 175, 215);">
+  <div class="container pt-4 HomePageNewsletter sub">
+      <div class="from-text-content mx-auto" style="max-width:700px">
+          <h3 class="title-style" style="color: rgb(55, 12, 46);" style="text-decoration: double; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-style: oblique; font-weight: 1000;">Subscribe to get email updates of our latest news</h3>
+          <div class="main-midd-2 mt-5">
+              <form action="" method="post" class="d-sm-flex rightside-form">
+                  <input type="email" class="form-control fs-4 mt-5 mb-2" name="email" placeholder="Enter your email" style="margin-bottom: 10px;">
+                  <button class="btn btn-style fs-4 mt-5 mb-2 " type="submit" style="color: #211405; background-color: darkorange;">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+<footer class="w3l-footer-22 py-5" style="background-color: #b1e078;">
+  <div class="container py-md-5 py-4 SaladsFooter">
+      <div class="row sub-columns">
+          <div class="col-lg-4 col-sm-6 sub-one-left">
+              <h6>About </h6>
+              <p>Salad restaurants may have salad bars where customers can make their own salads by selecting ingredients from a buffet-style table.</p>
+              
+                                              <div class="columns-2 FooterSocial">
+                  <ul class="social">
+                                                                          <li><a href="https://www.facebook.com/w3layouts/" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+                                              
+                                                                          <li><a href="https://linkedin.com/W3layouts" class="linkedin"><span class="fab fa-linkedin-in"></span></a></li>
+                      
+                                                                          <li><a href="https://twitter.com/W3layouts" class="twitter"><span class="fab fa-twitter"></span></a></li>
+                                              
+                                                                          <li><a href="https://google.com/W3layouts" class="google"><span class="fab fa-google-plus-g"></span></a></li>
+                      
+                                                                          <li><a href="https://instagram.com/W3layouts" class="instagram"><span class="fab fa-instagram"></span></a></li>
+                                          </ul>
+              </div>
+              
+          </div>
+
+                                  <div class="col-lg-3 col-sm-6 FooterContactInfo sub-two-right pl-lg-5 mt-sm-0 mt-4 pt-sm-0 pt-3">
+              <h6 class="footer-title-29">Contact Info</h6>
+              <ul class="lists-para-two">
+
+                                                              <li class=""></li>
+                  
+                  <li class="para-footer-li">
+                      <span class="fas fa-angle-right mr-2"></span>
+                      <p>Bihar Sharif (Nalanda)</p>
+                  </li>
+                  
+                                                          <li> <a href="tel:+91(62) 03933391">
+                      <span class="fas fa-angle-right mr-2"></span>
+                      +91 6203933391</a></li>
+                  
+                                                          <li> <a href="mailto:info@example.com">
+                      <span class="fas fa-angle-right mr-2"></span>
+                      techlabeeb@gmail.com</a></li>
+                                  </ul>
+          </div>
+          
+          <div class="col-lg-2 col-sm-6 sub-two-right mt-lg-0 mt-4">
+                          </div>
+          <div class="col-lg-3 col-sm-6 sub-two-right pl-lg-5 mt-lg-0 mt-4">
+                          </div>
+      </div>
+  </div>
+
+  
+          <div class="copyright-footer text-center mt-4">
+      <div class="container">
+          <div class="columns">
+              <p class="CopyRights">
+                  © 2024                    Salads                              <a href="https://w3layouts.com/" target="_blank">
+                  .                    </a>
+                                  </p>
+          </div>
+      </div>
+  </div>
+      
+</footer>
+
+    
+    
+
+
+
+</body>
+</html>
